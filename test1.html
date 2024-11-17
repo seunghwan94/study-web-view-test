@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" 
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" 
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Security Settings</title>
+</head>
+
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">
+                <a href="mypage.html" class="text-decoration-none text-dark"><strong>사용자</strong></a>님, 환영합니다.
+            </p>
+            <nav class="ms-auto">
+                <a href="logout.html" class="text-decoration-none me-3">로그아웃</a>
+                <a href="home.html" class="text-decoration-none">홈</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Security Settings -->
+        <section class="mb-5">
+            <h3>기본 보안 설정</h3>
+            <ul class="list-group">
+                <li class="list-group-item">비밀번호</li>
+                <li class="list-group-item">2단계 인증</li>
+            </ul>
+        </section>
+
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">완료</button>
+          </form>
+          <br>
+        <!-- Login Restrictions -->
+        <section class="mb-5">
+            <h3>로그인 차단 설정</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    타지역 로그인 차단
+                    <select class="form-select mt-2" disabled>
+                        <option>서울시/인천시/경기도</option>
+                        <option>지역2</option>
+                        <option>지역3</option>
+                        <option>지역4</option>
+                    </select>
+                </li>
+                <li class="list-group-item">해외 로그인 차단</li>
+            </ul>
+        </section>
+
+        <!-- New Device Login Notification -->
+        <section class="mb-5">
+            <h3>새 기기 로그인 알림</h3>
+            <ul class="list-group">
+                <li class="list-group-item">로그인 알림</li>
+                <li class="list-group-item">로그인 알림 제외 목록</li>
+            </ul>
+        </section>
+
+        <!-- New Environment Login Notification -->
+        <section>
+            <h3>'새로운 환경' 로그인 알림</h3>
+            <ul class="list-group">
+                <li class="list-group-item">프라이버시 보호</li>
+                <li class="list-group-item">로그인 전용 아이디</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-4">
+        <p class="mb-0 small">&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

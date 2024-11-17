@@ -14,6 +14,10 @@
     <style>
         .side-nav{
             height: calc(100vh - 66px);
+            width: 280px;
+        }
+        .hide{
+          display: none;
         }
     </style>
 </head>
@@ -26,31 +30,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="nav-link" href="javascript:void(0)"><i class="fa-solid fa-grip-lines"></i></a>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary" type="button">Search</button>
-                </form>
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+              <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+              </form>
             </div>
             <a class="navbar-brand ps-4" href="#">
-                <img src="user.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+              <img src="user.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
             </a>
         </div>
     </nav>
 
 
-    <div class="side-nav d-flex flex-column flex-shrink-0 ps-3 text-white bg-dark" style="width: 280px;">
+    <div class="side-nav d-flex flex-column flex-shrink-0 ps-3 text-white bg-dark hide">
         <ul class="nav nav-pills flex-column mb-auto p-3">
           <li class="nav-item">
             <a href="#" class="nav-link active" aria-current="page">
@@ -60,25 +53,25 @@
           </li>
           <li>
             <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              <svg class="bi" width="1" height="16"><use xlink:href="#speedometer2"></use></svg>
               Dashboard
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              <svg class="bi" width="1" height="16"><use xlink:href="#table"></use></svg>
               Orders
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              <svg class="bi" width="1" height="16"><use xlink:href="#grid"></use></svg>
               Products
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              <svg class="bi" width="1" height="16"><use xlink:href="#people-circle"></use></svg>
               Customers
             </a>
           </li>
