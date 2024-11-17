@@ -7,28 +7,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css" integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Document</title>
+
+    <style>
+        .side-nav{
+            height: calc(100vh - 66px);
+        }
+    </style>
 </head>
 <body>
-
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class=" navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
+
             <a class="navbar-brand" href="javascript:void(0)">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="nav-link" href="javascript:void(0)"><i class="fa-solid fa-grip-lines"></i></a>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -36,14 +43,47 @@
                     <button class="btn btn-primary" type="button">Search</button>
                 </form>
             </div>
-        </div>
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="user.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            <a class="navbar-brand ps-4" href="#">
+                <img src="user.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
             </a>
-          </div>
+        </div>
     </nav>
-    
+
+
+    <div class="side-nav d-flex flex-column flex-shrink-0 ps-3 text-white bg-dark" style="width: 280px;">
+        <ul class="nav nav-pills flex-column mb-auto p-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi" width="1" height="16"><use xlink:href="#home"></use></svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+      </div>
 
 
 </body>
